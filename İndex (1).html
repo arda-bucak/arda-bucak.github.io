@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Arda Bucak - Kişisel gelişim, psikoloji ve mitoloji alanlarında blog ve portföy sitesi." />
+  <meta name="keywords" content="Arda Bucak, kişisel gelişim, psikoloji, mitoloji, blog, portföy" />
+  <meta name="author" content="Arda Bucak" />
+  <title>Arda Bucak - Kişisel Gelişim & Psikoloji Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1 tabindex="0">Arda Bucak</h1>
+      <p class="subtitle" tabindex="0">Kişisel Gelişim | Psikoloji | Mitoloji</p>
+      <button id="theme-toggle" aria-label="Tema değiştir" title="Koyu/Açık Tema Değiştir">🌙</button>
+    </div>
+    <nav aria-label="Ana navigasyon">
+      <ul class="nav-links container">
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#social">Sosyal Medya</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section" tabindex="0">
+      <h2>Hakkımda</h2>
+      <p>
+        Merhaba, ben Arda Bucak. Yazdığım blogda kişisel gelişim, psikoloji ve mitoloji üzerine paylaşımlar yapıyorum.
+        Biyografimi yakında ekleyeceğim.
+      </p>
+    </section>
+
+    <section id="projects" class="section" tabindex="0">
+      <h2>Projelerim</h2>
+      <div class="project">
+        <h3>Örnek Proje 1</h3>
+        <p>HTML, CSS ve JavaScript kullanarak geliştirdiğim web uygulaması.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub'da Görüntüle</a>
+      </div>
+      <div class="project">
+        <h3>Örnek Proje 2</h3>
+        <p>Node.js ile geliştirdiğim backend projesi.</p>
+        <a href="#" target="_blank" rel="noopener noreferrer">GitHub'da Görüntüle</a>
+      </div>
+    </section>
+
+    <section id="blog" class="section" tabindex="0">
+      <h2>Blog Yazıları</h2>
+
+      <div class="blog-filter">
+        <button data-filter="all" class="active">Hepsi</button>
+        <button data-filter="kisisel-gelisim">Kişisel Gelişim</button>
+        <button data-filter="psikoloji">Psikoloji</button>
+        <button data-filter="mitoloji">Mitoloji</button>
+      </div>
+
+      <article class="blog-post" data-category="kisisel-gelisim" tabindex="0">
+        <h3>Kişisel Gelişim: Başarıya Giden Yol</h3>
+        <p>Hayatınızda olumlu değişiklikler yapmak için küçük adımlar atmanın önemi...</p>
+        <a href="#" class="read-more">Devamını Oku</a>
+      </article>
+
+      <article class="blog-post" data-category="psikoloji" tabindex="0">
+        <h3>Psikoloji: Stresle Baş Etme Teknikleri</h3>
+        <p>Stresin hayat kalitenizi düşürmesini önlemek için uygulayabileceğiniz pratik yöntemler...</p>
+        <a href="#" class="read-more">Devamını Oku</a>
+      </article>
+
+      <article class="blog-post" data-category="mitoloji" tabindex="0">
+        <h3>Mitoloji: Eski Çağların Efsaneleri</h3>
+        <p>Mitolojinin günümüz kültürüne etkilerini keşfedin...</p>
+        <a href="#" class="read-more">Devamını Oku</a>
+      </article>
+    </section>
+
+    <section id="social" class="section" tabindex="0">
+      <h2>Sosyal Medya</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/a.auditum?igsh=ZnVvcHV4MGhvbzFk" target="_blank" aria-label="Instagram" rel="noopener noreferrer" tabindex="0">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+        </a>
+        <a href="https://x.com/a_auditorre?t=iUyMaYxI3ZPLQTpK_9QtvQ&s=09" target="_blank" aria-label="Twitter" rel="noopener noreferrer" tabindex="0">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" />
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section" tabindex="0">
+      <h2>İletişim</h2>
+      <p>E-posta: <a href="mailto:auditore3034@gmail.com">auditore3034@gmail.com</a></p>
+      <form id="contact-form" novalidate>
+        <label for="name">İsim:</label>
+        <input type="text" id="name" name="name" required aria-required="true" />
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+
+        <label for="message">Mesaj:</label>
+        <textarea id="message" name="message" required aria-required="true"></textarea>
+
+        <button type="submit">Gönder</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Arda Bucak</p>
+  </footer>
+</body>
+</html>
